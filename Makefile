@@ -8,7 +8,7 @@ pipework:
 	sudo /etc/init.d/procps restart >/dev/null
 
 riak-container:
-	sudo docker build -t "hectcastro/riak" .
+	sudo docker build -rm=true -t "kunthar/riak" .
 
 start-cluster:
 	./bin/start-cluster.sh
